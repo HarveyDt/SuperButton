@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+
+    <com.harvey.view.SuperButton
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="直角边框"
+        stv:sSolidColor="@color/color_ffffff"
+        stv:sStrokeColor="@color/color_00bcd5"
+        stv:sStrokeWidth="0.5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+      <com.harvey.view.SuperButton
+          android:layout_width="70dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          android:text="圆角边框"
+          stv:sCornersRadius="5dp"
+          stv:sSolidColor="@color/color_ffffff"
+          stv:sStrokeColor="@color/color_00bcd5"
+          stv:sStrokeWidth="0.5dp"
+          />
+
+      <com.harvey.view.SuperButton
+          android:layout_width="70dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          android:text="圆角边框"
+          stv:sCornersRadius="5dp"
+          stv:sSolidColor="@color/color_00bcd5"
+          stv:sStrokeWidth="0.2dp"
+          />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <com.harvey.view.SuperButton
+          android:id="@+id/super_btn1"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="10dp"
+          android:layout_marginRight="10dp"
+          android:text="左上圆角"
+          stv:sCornersTopLeftRadius="20dp"
+          stv:sStrokeColor="@color/color_00bcd5"
+          stv:sStrokeWidth="0.5dp" />
+
+      <com.harvey.view.SuperButton
+          android:id="@+id/super_btn2"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="10dp"
+          android:layout_toRightOf="@+id/super_btn1"
+          android:text="右上圆角"
+          stv:sCornersTopRightRadius="20dp"
+          stv:sStrokeColor="@color/color_00bcd5"
+          stv:sStrokeWidth="0.5dp" />
+
+      <com.harvey.view.SuperButton
+          android:id="@+id/super_btn3"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/super_btn1"
+          android:layout_marginBottom="10dp"
+          android:layout_marginRight="10dp"
+          android:text="左下圆角"
+          stv:sCornersBottomLeftRadius="20dp"
+          stv:sStrokeColor="@color/color_00bcd5"
+          stv:sStrokeWidth="0.5dp" />
+
+      <com.harvey.view.SuperButton
+          android:id="@+id/super_btn4"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/super_btn2"
+          android:layout_marginBottom="10dp"
+          android:layout_toRightOf="@+id/super_btn3"
+          android:text="右下圆角"
+          stv:sCornersBottomRightRadius="20dp"
+          stv:sStrokeColor="@color/color_00bcd5"
+          stv:sStrokeWidth="0.5dp" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+      <com.harvey.view.SuperButton
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_gravity="center"
+          android:layout_margin="5dp"
+          android:text="圆形"
+          stv:sShapeType="oval"
+          stv:sSolidColor="@color/color_00bcd5" />
+
+      <com.harvey.view.SuperButton
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_gravity="center"
+          android:layout_margin="5dp"
+          android:text="圆形"
+          stv:sShapeType="oval"
+          stv:sStrokeColor="@color/color_00bcd5"
+          stv:sStrokeDashGap="5dp"
+          stv:sStrokeDashWidth="10dp"
+          stv:sStrokeWidth="0.5dp" />
+
+      <com.harvey.view.SuperButton
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_gravity="center"
+          android:layout_margin="5dp"
+          android:text="圆形"
+          stv:sShapeType="oval"
+          stv:sStrokeColor="@color/color_00bcd5"
+          stv:sStrokeWidth="0.5dp" />
+
+      <com.harvey.view.SuperButton
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_gravity="center"
+          android:layout_margin="5dp"
+          android:text="圆形"
+          stv:sShapeType="oval"
+          stv:sStrokeColor="@color/color_00bcd5"
+          stv:sStrokeWidth="3dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+      <com.harvey.view.SuperButton
+          android:layout_width="70dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          stv:sGradientEndColor="@color/colorPrimary"
+          stv:sGradientOrientation="TOP_BOTTOM"
+          stv:sGradientStartColor="@color/colorAccent" />
+
+      <com.harvey.view.SuperButton
+          android:layout_width="70dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          stv:sGradientEndColor="@color/colorPrimary"
+          stv:sGradientOrientation="BOTTOM_TOP"
+          stv:sGradientStartColor="@color/colorAccent" />
+
+      <com.harvey.view.SuperButton
+          android:layout_width="70dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          stv:sGradientEndColor="@color/colorPrimary"
+          stv:sGradientOrientation="RIGHT_LEFT"
+          stv:sGradientStartColor="@color/colorAccent" />
+
+      <com.harvey.view.SuperButton
+          android:layout_width="70dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          stv:sGradientEndColor="@color/colorPrimary"
+          stv:sGradientOrientation="LEFT_RIGHT"
+          stv:sGradientStartColor="@color/colorAccent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+      <com.harvey.view.SuperButton
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          android:text="点击"
+          android:textColor="@color/color_ffffff"
+          stv:sCornersRadius="5dp"
+          stv:sSelectorNormalColor="@color/color_00bcd5"
+          stv:sSelectorPressedColor="@color/gray_btn"
+          stv:sUseSelector="true" />
+
+      <com.harvey.view.SuperButton
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          android:enabled="false"
+          android:text="不可点击颜色"
+          android:textColor="@color/color_ffffff"
+          stv:sCornersRadius="5dp"
+          stv:sSelectorDisableColor="@color/gray_btn"
+          stv:sSelectorNormalColor="@color/colorAccent"
+          stv:sSelectorPressedColor="@color/colorPrimary"
+          stv:sUseSelector="true" />
+
+    </LinearLayout>
+
+  </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
